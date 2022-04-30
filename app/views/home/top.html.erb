@@ -1,2 +1,53 @@
-<h1>Home#top</h1>
-<p>Find me in app/views/home/top.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>材料費管理アプリ</title>
+
+ <link rel="stylesheet" href="top.css">
+</head>
+<header>
+<div class="header-logo">
+ AnyApp
+</div>
+
+<div class="header-list">
+ <ul>
+ <li><%= link_to("サプライヤー登録","/supplier/new") %></li>
+ <li><%= link_to("材料登録","/material/new")%> </li>
+ <li><%= link_to("サプライヤー一覧","/supplier/index")%> </li>
+ <li><%= link_to("材料一覧","/supplier/index")%> </li>
+ </ul>
+</div>
+</header>
+
+
+<main>
+
+<div class="container">
+
+<form method="get" action="#" class="search_container">
+  <input type="text" size="25" placeholder="材料名を入力ください">
+  <input type="submit" value="&#xf002">
+</form>
+<div>
+
+</main>
+
+<footer>
+    <div class="footer-logo">
+        AnyApp
+    </div>
+    <div class="footer-list">
+    <ul>
+    <li><%= link_to("サプライヤー登録","/supplier/new") %></li>
+    <li><%= link_to("材料登録","/material/new")%> </li>
+    <li><%= link_to("サプライヤー一覧","/supplier/index")%> </li>
+    <li><%= link_to("材料一覧","/supplier/index")%> </li>
+    </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>
