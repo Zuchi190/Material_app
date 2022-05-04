@@ -1,0 +1,24 @@
+<div class="main">
+<div class="container">
+<% @suppliers.each do |supplier| %>
+<div class="supplier_box">
+        <div class="supplier_left">
+        <div class="supplier_name">
+            
+        <p>サプライヤー名：<%= supplier.name %></p>
+        </div>
+        </div>
+    <div class="supplier_person">
+    <p>担当者名：<%= supplier.person %></p>
+</div>
+
+<div class="supplier_right">
+    <div class="supplier_phone_number">
+    <p>電話番号：<%= supplier.phone_number %></p>
+    </div>
+</div>
+</div>
+<% end %>
+
+</div>
+</div>

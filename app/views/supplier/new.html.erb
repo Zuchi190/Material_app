@@ -1,20 +1,15 @@
 <div class="main">
-<div class="container">
-    <div class="supplier_card">
-        <div class="supplier_left">
-        <div class="supplier_name">
-            <%= @supplier.name %>
+    <div class="container">
+        <div class="form_container">
+        <%= form_tag("/supplier/create") do%>
+            <p>サプライヤー名</p>
+            <input type="text" placeholder="〇〇株式会社" name="name">
+            <p>担当者名</p>
+            <input type="text" placeholder="テスト太郎" name="person">
+            <p>電話番号</p>
+            <input type="text" placeholder="000-111-2222" name="phone_number">
+            <input type="submit" class="submit">
+        <% end %>
         </div>
-        </div>
-<div class="supplier_person">
-    <%= @supplier.person %>
-</div>
-
-<div class="supplier_right">
-<div class="supplier_phone_number">
-    <%= @supplier.phone_number %>
-</div>
-</div>
-</div>
-</div>
+    </div>
 </div>
