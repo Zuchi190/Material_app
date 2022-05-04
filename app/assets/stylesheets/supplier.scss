@@ -1,10 +1,38 @@
-.supplier_card{
+.supplier_box{
     background:#DDDDDD;
-    padding:40px 0px;
-    color:#CC0033;
+    padding:20px 0px;
+    border:2px solid red;
 }
 
 .supplier_card p{
     font-size:30px;
     
+}
+
+.form_container{
+    background:#DDDDDD;
+    padding:40px 0px;
+    
+}
+
+input{
+    display: block;
+    margin:0 auto;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+p{
+    margin:0px;
+    padding:10px 0;
+    text-align: left;
+}
+
+.submit{
+    width:100px;
+    background:#F3E37C;
+}
+
+input::placeholder{
+    color:gray;
 }
