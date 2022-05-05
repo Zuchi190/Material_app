@@ -1,0 +1,27 @@
+<div class="main">
+<div class="container">
+<% @materials.each do |material| %>
+<div class="supplier_box">
+        <div class="supplier_left">
+        <div class="supplier_name">
+            
+        <p>材料名：<%= material.name %></p>
+        </div>
+        </div>
+    <div class="supplier_person">
+    <p>値段：<%= material.price %></p>
+</div>
+
+<div class="supplier_right">
+    <div class="supplier_phone_number">
+    <p>寸法：<%= material.size %></p>
+    </div>
+    <div class="supplier_phone_number">
+    <p>サプライヤー：<%= material.supplier_id %></p>
+    </div>
+</div>
+</div>
+<% end %>
+
+</div>
+</div>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'home#top'
+  get 'material'=>"material#index"
   get 'material/new'=>"material#new"
   get 'supplier'=>"supplier#index"
   get 'supplier/new'=>"supplier#new"
