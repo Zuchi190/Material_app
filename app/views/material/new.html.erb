@@ -1,8 +1,7 @@
-
 <div class="main">
 <div class="container">
     <div class="form_container">
-    <%= form_for @material,:url=>{:controller=>:material,:action=>:create}  do |f| %>
+    <%= form_for @material, url: "/material/create" do |f| %>
     <p>材料名</p>
     <%= f.text_field :name %>
     <p>値段</p>
