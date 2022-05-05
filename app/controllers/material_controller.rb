@@ -6,7 +6,6 @@ class MaterialController < ApplicationController
   def create
   Material.create(create_params)
   redirect_to("/")
-  
   end
 
   def index
