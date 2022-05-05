@@ -2,16 +2,16 @@
 <div class="main">
 <div class="container">
     <div class="form_container">
-    <%= form_tag("/material/create") do %>
+    <%= form_for @material,:url=>{:controller=>:material,:action=>:create}  do |f| %>
     <p>材料名</p>
-    <input type="text" placeholder="ミガキ" name="name">
+    <%= f.text_field :name %>
     <p>値段</p>
-    <input type="text" placeholder="100円/kg" name="price">
+    <%= f.text_field :price %>
     <p>サイズ</p>
-    <input type="text" placeholder="t=1.2×1219×2438" name="size">
+    <%=f.text_field :size %>
     <p>サプライヤー</p>
-    <%= collection_select(:material,:supplier_id, @suppliers, :id, :name,{prompt:"選択してください"},class:"search-occupation") %>
-    <input type="submit" class="submit">
+    <%= f.collection_select :supplier_id, Supplier.all, :id, :name,prompt: "選択してください",class: "aa" %>
+    <%= f.submit  %>
     <% end %>
     </div>
 </div>
